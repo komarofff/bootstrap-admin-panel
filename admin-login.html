@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin-login</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body class="bg-light admin-body">
+<div class="wrapper">
+<div class="container-fluid  py-4 px-2 shadow-sm bg-white">
+    <div  class="container mx-auto">
+        <svg width="100" height="27" viewBox="0 0 100 27" fill="none" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="100" height="26.3636" fill="url(#pattern0)"/>
+            <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_1442_15824" transform="scale(0.00454545 0.0172414)"/>
+                </pattern>
+                <image id="image0_1442_15824" width="220" height="58"
+                       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAAA6CAYAAADbRzceAAAACXBIWXMAAAsTAAALEwEAmpwYAAAPg0lEQVR4nO2de5RVVR3HP3NnBsEBH4CKKYqC5mvykWDycHioUCHy0soiKx9ZllaWLh+tVq1S03wsXWaWpa7UFCVBBkwNU8kkMF8ojDOAiE988RpmmIGZ6Y/vPWsuZ/Y+9+xzzr1zlfNZyyXrnLvP2XPv+e3fY/9+v1NWNXAMeRgMTARGAocA+wCvAqcB7+UbHIGewPeB6cDBQMZ3fivwAVAPLAYeAV4qwDxSUhKnLEDgDgUuRg9+b8P5xcAkYG2C8+kPzAJOcBizDVgA3Aj8I8G5pKQkjl97ePwIWAR8C7OwAQwD5gIDEpzPrbgJG0AFMB5punuRBk5JKUn8AlcO3A7cAOwSYvxQYA7JCN0IpE3j8DXgKbQYpKSUHH6B+wNwluM1hiGh2zPmXCbEHO8xGJgHfCGh66WkJEauwF0AnB3xOsOAWuJpun1jjPXTH5gJ7J/gNVNSYuMJ3MHAr2NeK655+UHM+/sZiDS2zU9NSSk63sN4OdAngesNAx4mmnm5IIH7+5mA/LqUlJIgAxxA/GBFLkORebm347gngH8mOA+PS9DeXkpKt5MBTgF2Tvi6Q4GHkC8Vlq3AOcBrCc+lGhib8DVTUiKRwX3fKyzHIfNyD4cxq9ECUJ/wXKYmfL2UlEhkUMCkUBwPzMZN6BqAL5Os0A1HG+QpKd1KBkXzCslwJHQu5uUKlL+ZlNDti7tPmZKSOBXASuDzBb7PcGRenkr48H8DErp5wEEx778zErg3Y15nR2IAcBnKPvLIoK2fNGc1IhXIv6lFwYVC4pmXk3ETui8hoYtj+paTfGDo005f4IeG4x+SClxkMsAaFKhYWoT7eeZlP4cxK0gmkFIWc/yORjuKHPtpKfZEPk14G99vIPOtWEI3F7fN8XoUSFlVkBmlpBSJ3LSnNeihLobQHY/26VyilyvQ/FZEvGeq4VK6HX+e4ZsosLG8CPf2zMu+DmPqUNFrFE3XFmFMSkqimPamXkeaZB6q+i4kw4G/A9OAj0KOWU5nIGVwyDEtwLvOs9ue0dn75tKBimZX5xzLoE3/41CkrxVZD4uBl2POwc+ewGHA4dl/9wA2o4VzKVqgmiJee7PleGvE6/nJAINQ247ByK/vmb3+h+h3Xop7G48hwLmG43OAZyxjeqLvbhP6TYPoAxyYnfdAYDcUlGsC3snOeRnQaBps2wx+Hfl0c9EPWkhqkNBNBtaFHPMaCqTUoj8+H88T3RT1qAF+Zjj+CJ0CdyLwC9T/xU8b8CTwG+BfMecyGpVSjSO4OmMZetD+Qri/vy9aBNtQaZPJDK8GTgJ28h1vBZ4GtuS5xzFogT0pe62gPNcPUX7t74GFea7rMQTz7/Q+2wvc7sDpSLkckD02JntPP1UoPXAqKpTOt01Vj1qF3IpvKyqopwnoYa6l8JoO9GNNJbymA60y8wgWujakmR6LPjVASdBX+451IOH6D3AR8Fu237eyzedi4PoIcxgCXIV7svlGVMV/FcFRxjEoiTwKTcBngbcs58eifb3R5P+O/LQjobuE/Bp7HOYk+AuAm7P/ngRcy/ZbTduQxsrVqGXodz0b/W2urEVzvss7kK9WbBVaAYrh052AVgVXn+6LwIuW85uB7xJf2IJoREnXvyPcg1QOXIf6xbgwHrWPiFLZsQvSvPMJLvSN4+duJtgcOwAJg6uwgZ7THwD3Ab0ijM/lO8ii8u/rttB1/h1oEYoibAB7AXcCP/YOhCnO9MzLZRFv6kINil7u7jCmHn0pF6MHsg75SzcjP+rPCc8xl2bgDOCmCGOvA/YL+dmJyDT8TIT75DKWaKVTSTAbmXVxOAVppig0AkejomQXob8j4v1yuY5sC5F8JmUupW5eelQhQWhPdEZmk7INLVp+X6cVqDQc93NN9rpBHI78F9siVI+Kd1ci/2kv5IfVYPfRH0MPrz8AEsek3IJ8G5tJCfBX4BvZf3cg/6YeeBtpyAzySY9CARUT7ciPWmQ5bzMpL0IReFt1TCtaAP1tH3dHi7i3b9yEfPYGlDHVgvzQA5F/uqvl+q8Aw1wy6D3zspbCB1JOQGp/CvCx41hbdK0Q5K6UH6OOZ08gP6A3enDOzv7fxHTgl9j9knLgFszCtg64FD3EpvHHogDNyYZzJ6Nmuzf6jq9Gi0AHSjb/Nl2toIXZ/3KfnTKkQTZa/g6PmagrwAMo2PQi5t+rD/rtr6arNs4A52EXOBPtwAzgSMv5ZqR9TYv0OuTqHIV8sSeRLJiycAYB5wM/oev3dgRwkouG8yimpluIVqWw0ctCYtJwHq+giJfJ161CdrzN9zoW+J/l3FeBvxmOr0WO/2LLOI8K4Dbkt5iuUY09r3U/FNms9B2/BAllFCqzc2oO+fmjkfb2LzhvokXfFHq3aTg/a4H7UdBtDVos3sMsdFW4LeQ/xWz63h6lwc4qZI40RBjryijk0+1WhHtFpRGtnrbA0mak5V63nD/EcrwcBQr8tKMgTT5hA0XezkMmup+9gK8EjLUle/cIcV8bWwkvbAAvIJ/LzwDiVZDMQm0UL0TmdR3aQ7O5Ia5W0/WY2+9XR+1otRKZl0m3QzBRAzyI3Tbubh7CHiX12ADcbTlnS287FAV9/MxH+6Nh2YoCStsM56ZR+ilvDxuOVaIFIwr3IGtkddQJhaAdeNRwfJ84VdANSNMlUa+Wj3HIp5uKHt5SwvTFmnjWctymMUZgDnpEiZr9N3v/Ub7jRyBtETcLx5UyFGo/Am1T9EPfg5dl8i4yZ19FQZhmum4H2FrwB9GAfKyoAbUqZIYfjCLGu6K/pQmZqO+gaP4qzOmHVXHbDnjtEIohdGORKTAdWF/ge7kQFJXLxfMP/FaFbe/KVJ+4EZlZUVhAV4Hrj97FUCyB64UCMTOAzxFco7gV+VZ1mLVwFM18LdEW7IOA76F4wiCCt9MakdCZLIpE+nx4ldlzKWx/FJCmm4UiWPkiYsWgA8sXa2AbZoGzYSpfWkf0txXZ6gldahPjcAzwp+z/w1CJcizD5svm4yO0F+jKOShYFjYhozcB77ZIqitxPRK6YgRSxlJagZSwK63rimxaDNsJL+B+bDmOxWiuVI18zyBha0baoYnCVHYswb279/nAH7ELWxsKqDSSP4cUSPbLLrZ5+SBy+kvNp0sKU2SsN1poomRs2DRZob+/CrSXaApyvIV80qeQ+diMkqL70bmRPB75enGVQ53j5w/HntWyEAXBXkBC3I7M4wEo33UU2uvskljuF7jD0Kbzvsh0eQZl2ofFE7paimNeepvjpWBeJs0bhmP90DZCFIEzaZcmCu+/1dDVdwQ9W6ejQIOflWjb4z6Uo/oS8V+J5lrmcx7mvM2rgJ9j1sJ1aGP8dtRi/17/B7xVowrlHi5BJQWXo/zARWjT1iWh2PPpdkTzMklM+2wZ9KpnV3qhchg/qyh8J7PxhmNNKAhhEjY/bSRjYrrUBfZAaW5+nkUVD2HmY6zKyCAtdy/aZPVHjSqBM1HirGsz14lopSo0nnmZxMtISolFmGuzzsQ9e30GMnX8PIp7QWm+Ak0/JkunnvCtPHoT7uWgSbIr5qqKsFtAYOnDmkFpP5PyDB6JNIlLRKue6O0QXBmH8vM+TUL3PjKZ/fRBJkvYfahqzK8i20pOnZYBW5DHX3iaD9PnXYS8huL/rjthjm+4dCwzvmA0A3wz5AVG4N6DZBnF67Y1HgldsVfDQnIDZlNoJMrAyBecqsFundxDsJaxRUODkm9NQmoKygwh3As49wSuCPG5pNmMOQXNVMlvYhKy8Lrg+m6BkWgfzKVerY7imZfjUUZ6lCyEUqQOuNJybgwKPFyJ9n32Rr/LIBQhuwt4nM72Abm8Tf4HeT3mSOlIlBB9VPZe1ajk5hbMi91zhmN9UYygKuD+x6DgW6Ej3iY2YM6NnYB8zyBmoAoOf9I3ILVpPBHAaGReTiF8Fv9y3HqQxGE88ulOQ01hPulcjSoKJhvO7YFKdC5FUeUWZH4FLYhbULbH23nuuw65BaZN3HNRQvYGtLhVIhP4MsNn5wC/omvEbwpaMO5AkfB1SAAPRFX8UwkWyELSjqwlf3S1HLV68FwYrwaxP8qcmUaet1FV4O4EQ2fjn2mEr1dbjjRdsYRuJsqG/6RvGbShQMndaNGyESaZdxNq7fB4iM9uQ8Jiy5rIsL1g2zLqG5A2MxXaHklnTd4WJLj+auxVSHvHba3gyp3AWZhr6KZl/9uGfh+Tn7oCQ6AqzmbiaNzNS0/TFcOnm4CErrtWySTZiDT2NZgLH8PwPDI1TYEYG7cRvsV8UIX7L9BvEURPugpbLTLRuqOn6Cbg6wS7QhWYhe1COhsWbUfc3fvRyLx0DaRMpHiBlFkkE0gx9cEowy21yxT5CttfowVpibEomyes4NWjgshRuFVJg/IPpxMuhL8GexSvBfV+uYJw6VUfoM3lKXRWz/uxPbu241GaF72KzMeZhKsweAElON+EuQqkRwXRc/M8atBDXcrm5f1o5399jOtsQFkZuSZ4B+FDxV5DWH9rAtfUqn+j7+5IpMWHo8BCFXrYWpA/tQS1e1iApSlpSJaiQMkZyDo5CO3XdiAzchn6HWcTXFzahlo+3I380XEoYFeVc6267Hzn0LkhX45q13If4DLsJmwzXTfUy4juWryBXJPjkTCNRCbuTmjRW4cCQ/NR2wjveWik6/Oyoaxq4Jg6orcBy+Up9EWudxhzGJro/gncPx81mCufw9ILrbTeSleGvsyNhNM25SgjxhsHEpBG3KqgTZQhLZ7JXitUIm1EKlFgpgMtFnGaNZWjebcjE850Ldv3thHzYldJZ7Fy7uc3kdz30gstOi3YFzPT89JeVjVwzHwUFUqCJ3HTdKCwci3hW8ZFoRUYSvKtxlNSnMhg3ieJymjc2yEsRSaSKVk3KTYgcy4lpVvJILszytaAjTFEE7pJFE4oXqK0qsRTdlA8Dbck4eueiPYxXCJDL6M0sEII3bwCXDMlxZkMcvhvKMC1J2POjgjiFZI3L9ejrICUlG7H27N4AAU8kuaMCGOWovBzUpruVvKnMaWkFAVP4NpQ/4akOxzvR7TN9aQCKXVE7xKckpI4ucKwDCW1Rk0dMtFK9IBM3EBKE6r1Wx9xfEpK4vi1zxxUapHUCzGeI14E9GWk6VxNwiaUB2drvpqS0i2YzL2Z6I2hcd8H10oy72bzNF1YoVuZ/fzsBO6dkpIoNv/qaZTseiXuvfw8LiO5zI7nyS90zejFDyNQPl5KSskR5nVVA1E7s1NRkV2+De0VSFCTeHOkn6NRGpj3JtBm9Faa+Sgp1vTGkpSUkuH/HuVRUi08UZAAAAAASUVORK5CYII="/>
+            </defs>
+        </svg>
+    </div>
+
+</div>
+<div class="container-fluid  d-flex justify-content-center align-items-center h-100">
+    <div class="bg-white p-4 mt-5 mt-md-13 admin-login-form shadow-sm">
+        <p class="text-20 text-md-30 font-weight-bold mb-4">Anmelden</p>
+        <form action="#" class="d-flex flex-column ">
+            <div class="form-group text-12 text-md-14 ">
+                <label for="">E-Mail-Adresse</label>
+                <input type="email" class="form-control is-invalid"
+                       placeholder="E-Mail-Adresse eingeben">
+                <div class="invalid-feedback text-12">Leider konnten wir keinen registrieren Account mit dieser E-Mail-Adresse zuordnen.</div>
+            </div>
+
+            <div class="form-group text-sm">
+                <label for="">Password</label>
+                <input type="password" class="form-control is-invalid"
+                       placeholder="Passwort eingeben">
+                <div class="invalid-feedback">
+                    Ungültige E-Mail oder Passwort eingegeben.
+                </div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                       id="gridCheck2">
+                <label class="form-check-label text-12 font-weight-bold" for="gridCheck2">
+                    Angemeldet bleiben
+                </label>
+            </div>
+            <a class="text-primary font-weight-bold nav-link text-12" href="#">Passwort vergessen?</a>
+
+            <button type="submit"
+                    class="btn btn-primary font-weight-bold text-16 text-md-18 mt-4 w-100">
+                Anmelden
+            </button>
+
+        </form>
+    </div>
+</div>
+
+<div class="container-fluid  d-flex justify-content-center align-items-center h-100">
+    <div class="bg-white px-2 py-4 mt-5 mt-md-13 admin-login-form shadow-sm ">
+        <p class="text-md-30 text-20 font-weight-bold mb-4 text-center">Zwei-Faktor-Authentifizierung</p>
+        <p class="text-muted text-12 text-md-14  text-center px-4  px-md-5">Wir müssen überprüfen, ob Sie der
+            Inhaber des Kontos sind. Bitte geben Sie den Code und die SMS ein, die wir Ihnen an <span
+                    class="text-dark font-weight-bold">(618) ***-**69</span> gesendet
+            haben</p>
+        <form action="#" class="d-flex flex-column ">
+            <div class="my-3 d-flex justify-content-around align-items-center w-50 mx-auto">
+                <input type="text" class="py-3 font-weight-bolder form-control mx-1 text-center text-18" value="5">
+                <input type="text" class="py-3 font-weight-bolder form-control mx-1 text-center text-18" value="3">
+                <input type="text" class="py-3 font-weight-bolder form-control mx-1 text-center text-18" value="6">
+                <input type="text" class="py-3 font-weight-bolder form-control mx-1 text-center text-18" value="2">
+            </div>
+            <button type="submit"
+                    class="btn btn-primary font-weight-bold text-16 text-md-18 my-4 w-100">
+                Verifizieren
+            </button>
+            <a class="text-12 text-primary font-weight-bold nav-link p-0" href="#">Keinen Code erhalten? Erneut senden.</a>
+        </form>
+    </div>
+</div>
+
+<div class="container-fluid  d-flex justify-content-center align-items-center h-100">
+    <div class="bg-white p-4 mt-5 mt-md-13 admin-login-form shadow-sm ">
+        <h1 class="font-weight-bold text-md-30 text-20 my-3 ">Passwort vergessen?</h1>
+        <p class="text-muted text-12 text-md-14  font-weight-bolder   w-sm-75">Bitte geben Sie Ihre E-Mail-Adresse ein. Wenn diese registriert sein sollte, erhalten Sie in Kürze den Link zur Wiederherstellung.</p>
+        <form action="">
+            <div class="form-group my-3 ">
+                <label for="exampleInputEmail1" class="text-12 text-md-14 ">E-Mail-Adresse</label>
+                <input type="email" class="form-control is-invalid text-12 text-md-14 " id="exampleInputEmail1"
+                       aria-describedby="emailHelp" placeholder="Geben Sie Ihre E-Mail-Adresse ein">
+                <small id="emailHelp" class="form-text text-muted text-12">Wir senden Ihnen eine E-Mail zur Verifizierung.</small>
+                <div class="invalid-feedback text-12">Ungültige E-Mail oder Passwort eingegeben.</div>
+
+            </div>
+            <p>
+                <button type="submit" class="btn btn-primary text-18 mt-3 w-100 font-weight-bold">Bestätigen</button>
+            </p>
+            <a class="text-primary text-12 nav-link font-weight-bold p-0" href="#">Ich erinnere mich an mein Passwort</a>
+        </form>
+
+    </div>
+
+</div>
+<div class="container-fluid  d-flex justify-content-center align-items-center h-100">
+    <div class="bg-white p-4 mt-5 mt-md-13 admin-login-form shadow-sm ">
+        <div class="d-flex flex-column align-items-center ">
+            <svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M96.6538 38.4609H4.34613V88.4609H96.6538V38.4609Z" fill="#0B1D41"/>
+                <path d="M96.6538 38.5765H4.34613L50.5 3.8457L96.6538 38.5765Z" fill="#074EDE"/>
+                <path d="M75.7308 11.7109H11.4808V73.1148H89.5192V26.5956L75.7308 11.7109Z" fill="#EAE8E8"/>
+                <path d="M75.7307 11.7109V26.5956H89.5192L75.7307 11.7109Z" fill="#D7D4D4"/>
+                <path d="M96.6538 38.4609V96.1532L50.5 65.384L96.6538 38.4609Z" fill="#467EEC"/>
+                <path d="M50.5 65.384L4.34613 96.1532V38.4609L50.5 65.384Z" fill="#467EEC"/>
+                <path d="M96.6538 96.154H4.34613L50.5 65.3848L96.6538 96.154Z" fill="#074EDE"/>
+                <path d="M50.5 23.0762C48.0199 23.0733 45.5759 23.67 43.3762 24.8155C41.1765 25.961 39.2863 27.6213 37.8668 29.6549C36.4472 31.6886 35.5404 34.0353 35.2235 36.495C34.9066 38.9548 35.189 41.4547 36.0468 43.7817C36.9046 46.1087 38.3122 48.1939 40.1497 49.8595C41.9873 51.5251 44.2002 52.7218 46.6001 53.3476C48.9999 53.9734 51.5155 54.0097 53.9324 53.4535C56.3493 52.8973 58.5959 51.765 60.4808 50.1531L58.5577 47.807C56.4353 49.6452 53.7481 50.7024 50.9422 50.8033C48.1362 50.9041 45.3801 50.0425 43.1312 48.3614C40.8822 46.6803 39.2757 44.2808 38.5782 41.561C37.8807 38.8413 38.1341 35.9647 39.2964 33.4088C40.4586 30.8529 42.4599 28.7712 44.9681 27.5091C47.4762 26.2471 50.3405 25.8806 53.0857 26.4705C55.8308 27.0603 58.2917 28.5711 60.0601 30.752C61.8285 32.933 62.798 35.653 62.8077 38.4608V40.7685C62.8077 41.3805 62.5646 41.9675 62.1318 42.4003C61.699 42.8331 61.112 43.0762 60.5 43.0762C59.888 43.0762 59.301 42.8331 58.8682 42.4003C58.4354 41.9675 58.1923 41.3805 58.1923 40.7685V30.7685H55.1154V32.3454C53.7887 31.333 52.1688 30.7796 50.5 30.7685C49.226 30.7636 47.9707 31.0753 46.8469 31.6755C45.7231 32.2757 44.766 33.1456 44.0615 34.2071C43.357 35.2686 42.9272 36.4885 42.8107 37.7572C42.6942 39.0259 42.8946 40.3036 43.3939 41.4757C43.8933 42.6478 44.6759 43.6775 45.6716 44.4724C46.6673 45.2672 47.8447 45.8023 49.0983 46.0296C50.3519 46.2569 51.6423 46.1693 52.8537 45.7747C54.065 45.38 55.1594 44.6906 56.0385 43.7685C56.6329 44.6989 57.5 45.4232 58.5213 45.8427C59.5426 46.2622 60.6685 46.3564 61.7453 46.1124C62.8221 45.8685 63.7974 45.2982 64.5382 44.4795C65.279 43.6608 65.7492 42.6335 65.8846 41.5377V38.4608C65.8846 34.3805 64.2637 30.4674 61.3786 27.5822C58.4934 24.6971 54.5803 23.0762 50.5 23.0762ZM50.5 43.0762C49.5872 43.0762 48.6948 42.8055 47.9358 42.2984C47.1768 41.7912 46.5853 41.0704 46.2359 40.227C45.8866 39.3837 45.7952 38.4557 45.9733 37.5604C46.1514 36.6651 46.591 35.8427 47.2364 35.1972C47.8819 34.5518 48.7043 34.1122 49.5996 33.9341C50.4949 33.756 51.4229 33.8474 52.2662 34.1967C53.1096 34.5461 53.8304 35.1376 54.3376 35.8966C54.8447 36.6556 55.1154 37.548 55.1154 38.4608C55.1154 39.6849 54.6291 40.8588 53.7636 41.7244C52.898 42.5899 51.7241 43.0762 50.5 43.0762Z"
+                      fill="#0B1D41"/>
+            </svg>
+            <h1 class="font-weight-bold text-md-30 text-20 my-4 ">Wiederherstellung</h1>
+            <p class="text-12 text-md-18  text-center">Bitte überprüfen Sie Ihr Postfach. Wir haben Ihnen alle weiteren Anweisungen per Mail zugesandt.</p>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
+
+

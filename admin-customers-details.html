@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin-customers details</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body class="sidebar-mini sidebar-collapse">
+<div class="wrapper">
+<!-- Preloader -->
+<div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="images/notariat-logo-1.png" alt="NotariatLogo" >
+</div>
+
+<!-- Navbar -->
+<nav class="main-header navbar navbar-expand navbar-white navbar-light d-none d-md-flex justify-content-between">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+    </ul>
+<!--    <p class="mb-0 font-weight-bold">NOTAR.AT</p>-->
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ">
+
+
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+            <a class="text-dark  " data-toggle="dropdown" href="#">
+                <p class="mb-0 font-weight-bold d-flex justify-content-between align-items-center mr-3 text-16">
+                    Chris Glasser
+                    <svg class="tables-arrow ml-1" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52729 6.02925C3.78764 5.7689 4.20975 5.7689 4.4701 6.02925L7.9987 9.55784L11.5273 6.02925C11.7876 5.7689 12.2098 5.7689 12.4701 6.02925C12.7305 6.2896 12.7305 6.71171 12.4701 6.97206L8.4701 10.9721C8.20975 11.2324 7.78764 11.2324 7.52729 10.9721L3.52729 6.97206C3.26694 6.71171 3.26694 6.2896 3.52729 6.02925Z" fill="#8A8A8A"/>
+                    </svg>
+                </p>
+                <p class="mb-0 text-muted text-14">Admin</p>
+            </a>
+            <div class="dropdown-menu  dropdown-menu-right">
+                <a href="SubscribedNotary-editing-personal-data.html" class="dropdown-item nav-link text-dark font-weight-bolder  text-14">
+                    Persönliche Daten
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-item nav-link text-danger font-weight-bolder flex align-items-center text-14">
+                    <span>Abmelden</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8619 11.1368C11.1223 11.3971 11.5444 11.3971 11.8047 11.1368L14.4714 8.4701C14.5964 8.34508 14.6667 8.17551 14.6667 7.9987C14.6667 7.82189 14.5964 7.65232 14.4714 7.52729L11.8047 4.86063C11.5444 4.60028 11.1223 4.60028 10.8619 4.86063C10.6016 5.12098 10.6016 5.54309 10.8619 5.80344L12.3905 7.33203H8.66667C8.29848 7.33203 8 7.63051 8 7.9987C8 8.36689 8.29848 8.66536 8.66667 8.66536H12.3905L10.8619 10.194C10.6016 10.4543 10.6016 10.8764 10.8619 11.1368Z" fill="#CC3E3E"/>
+                        <path d="M12 3.33203V3.33203C12 2.22746 11.1046 1.33203 10 1.33203H5.33333C3.49238 1.33203 2 2.82442 2 4.66536V11.332C2 13.173 3.49238 14.6654 5.33333 14.6654H10C11.1046 14.6654 12 13.7699 12 12.6654V12.6654" stroke="#CC3E3E" stroke-width="1.33333"/>
+                    </svg>
+
+                </a>
+
+            </div>
+        </li>
+
+
+    </ul>
+</nav>
+<!-- /.navbar -->
+
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link d-flex  align-items-center ">
+        <svg class="brand-image elevation-3 flex-shrink-0 text-center" width="27" height="26" viewBox="0 0 27 26"
+             fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0_1327_16709" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="27"
+                  height="26">
+                <rect width="27" height="26" fill="url(#pattern0)"/>
+            </mask>
+            <g mask="url(#mask0_1327_16709)">
+                <rect width="27" height="26" fill="white"/>
+            </g>
+            <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_1327_16709" transform="scale(0.016835 0.0174825)"/>
+                </pattern>
+                <image id="image0_1327_16709" width="220" height="58"
+                       xlink:href="data:image/png;base64,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"/>
+            </defs>
+        </svg>
+
+        <!--<span class="brand-text font-weight-light b-2">notara</span>-->
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
+                     with font-awesome or any other icon font library -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link d-flex align-items-center">
+                        <svg style="min-width:24px;" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M2 3C2 2.44772 2.44772 2 3 2H21C21.5523 2 22 2.44772 22 3V10C22 10.5523 21.5523 11 21 11H3C2.44772 11 2 10.5523 2 10V3ZM4 4V9H20V4H4Z"
+                                  fill=""/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M15 14C15 13.4477 15.4477 13 16 13H21C21.5523 13 22 13.4477 22 14V21C22 21.5523 21.5523 22 21 22H16C15.4477 22 15 21.5523 15 21V14ZM17 15V20H20V15H17Z"
+                                  fill=""/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M2 14C2 13.4477 2.44772 13 3 13H12C12.5523 13 13 13.4477 13 14V21C13 21.5523 12.5523 22 12 22H3C2.44772 22 2 21.5523 2 21V14ZM4 15V20H11V15H4Z"
+                                  fill=""/>
+                        </svg>
+
+                        <p class="ml-2 text-16 font-weight-bold">Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active d-flex align-items-center">
+                        <div class="position-relative">
+                            <svg style="min-width:24px;" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4 8C3.44772 8 3 8.44772 3 9V19C3 19.5523 3.44772 20 4 20H20C20.5523 20 21 19.5523 21 19V9C21 8.44772 20.5523 8 20 8H4ZM1 9C1 7.34315 2.34315 6 4 6H20C21.6569 6 23 7.34315 23 9V19C23 20.6569 21.6569 22 20 22H4C2.34315 22 1 20.6569 1 19V9Z"
+                                      fill=""/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M7.87868 2.87868C8.44129 2.31607 9.20435 2 10 2H14C14.7956 2 15.5587 2.31607 16.1213 2.87868C16.6839 3.44129 17 4.20435 17 5V21C17 21.5523 16.5523 22 16 22C15.4477 22 15 21.5523 15 21V5C15 4.73478 14.8946 4.48043 14.7071 4.29289C14.5196 4.10536 14.2652 4 14 4H10C9.73478 4 9.48043 4.10536 9.29289 4.29289C9.10536 4.48043 9 4.73478 9 5V21C9 21.5523 8.55228 22 8 22C7.44772 22 7 21.5523 7 21V5C7 4.20435 7.31607 3.44129 7.87868 2.87868Z"
+                                      fill=""/>
+                            </svg>
+                        </div>
+                        <p class="ml-2 text-16 font-weight-bold">Kunden</p>
+
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>
+
+<div class="content-wrapper mb-6 mb-md-0 ">
+    <div class="">
+        <div class="bg-mobile-darkBlue mobile-header z-999 py-md-0 py-3  font-weight-bold text-14 text-md-20  d-flex d-md-none justify-content-md-between justify-content-start align-items-center w-100 ">
+            <div class="d-flex align-items-center ">
+                <svg class="d-block mx-3 d-md-none" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 12C20 12.5523 19.5523 13 19 13L5 13C4.44771 13 4 12.5523 4 12C4 11.4477 4.44771 11 5 11L19 11C19.5523 11 20 11.4477 20 12Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071L4.29289 12.7071C3.90237 12.3166 3.90237 11.6834 4.29289 11.2929L11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289C13.0976 4.68342 13.0976 5.31658 12.7071 5.70711L6.41421 12L12.7071 18.2929C13.0976 18.6834 13.0976 19.3166 12.7071 19.7071Z" fill="white"/>
+                </svg>
+
+                <span class="mr-3"> [Office name] </span>
+            </div>
+        </div>
+        <div class="container-fluid py-3 px-md-4 ">
+            <div class="row mb-2">
+                <div class="col-12  py-2 py-md-0  d-flex justify-content-between  align-items-center mb-3 mt-6 mt-md-0">
+                    <p class="m-0 text-14 text-muted d-none d-md-flex align-items-center">
+                        <svg class="mr-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M10.4714 3.52876C10.7317 3.78911 10.7317 4.21122 10.4714 4.47157L6.94277 8.00016L10.4714 11.5288C10.7317 11.7891 10.7317 12.2112 10.4714 12.4716C10.211 12.7319 9.7889 12.7319 9.52855 12.4716L5.52855 8.47157C5.26821 8.21122 5.26821 7.78911 5.52855 7.52876L9.52855 3.52876C9.7889 3.26841 10.211 3.26841 10.4714 3.52876Z"
+                                  fill="#8A8A8A"/>
+                        </svg>
+                        <span class="font-weight-bold">Zurück</span>
+                    </p>
+                    <div class="d-flex align-items-center w-md-50 w-100 justify-content-md-end justify-content-center">
+                        <p class="mb-0 text-14 font-weight-bold">Suchmaschinen erlauben das Profil zu crawlen?</p>
+                        <div class="custom-control custom-switch ml-3 ">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex flex-sm-nowrap flex-wrap justify-content-md-end justify-content-center mt-2 mt-md-0 header-buttons-section ">
+                    <p><button class="btn btn-success text-14 text-md-18 mx-3 text-nowrap font-weight-bold" data-toggle="modal"
+                            data-target="#target2">
+                        Änderungen speichern
+                    </button></p>
+                    <p><button class="btn btn-primary text-14 text-md-18 mr-md-3 text-nowrap font-weight-bold " data-toggle="modal"
+                            data-target="#target3">
+                        Profil anzeigen/anpassen
+                    </button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="content px-2 px-md-4">
+
+        <div class="card p-md-4 p-2">
+            <div class="d-flex justify-content-between align-items-center tables-header not-link">
+                <div class="d-flex align-items-center card-title not-link-box w-100">
+
+                    <svg class="d-none back-arrow mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M20 12C20 12.5523 19.5523 13 19 13L5 13C4.44771 13 4 12.5523 4 12C4 11.4477 4.44771 11 5 11L19 11C19.5523 11 20 11.4477 20 12Z"
+                              fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071L4.29289 12.7071C3.90237 12.3166 3.90237 11.6834 4.29289 11.2929L11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289C13.0976 4.68342 13.0976 5.31658 12.7071 5.70711L6.41421 12L12.7071 18.2929C13.0976 18.6834 13.0976 19.3166 12.7071 19.7071Z"
+                              fill="white"/>
+                    </svg>
+                    <div class="card-title-not-link  py-md-0 py-3  font-weight-bold text-14 text-md-20  d-flex justify-content-md-between justify-content-start align-items-center w-100 ">
+                        <div class="d-flex align-items-center">
+
+                            <span class="mr-3"> [Office name] </span>
+                            <svg class="mr-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M7.33337 13.3332C7.33337 12.965 7.63185 12.6665 8.00004 12.6665H14C14.3682 12.6665 14.6667 12.965 14.6667 13.3332C14.6667 13.7014 14.3682 13.9998 14 13.9998H8.00004C7.63185 13.9998 7.33337 13.7014 7.33337 13.3332Z"
+                                      fill="#8A8A8A"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M12.0001 2.58577C11.8018 2.58577 11.6117 2.66453 11.4715 2.80473L3.2687 11.0075L2.9163 12.4171L4.32589 12.0647L12.5287 3.86192C12.5981 3.7925 12.6531 3.71009 12.6907 3.6194C12.7283 3.5287 12.7476 3.43149 12.7476 3.33332C12.7476 3.23515 12.7283 3.13794 12.6907 3.04725C12.6531 2.95655 12.5981 2.87414 12.5287 2.80473C12.4592 2.73531 12.3768 2.68025 12.2861 2.64268C12.1954 2.60511 12.0982 2.58577 12.0001 2.58577ZM10.5287 1.86192C10.9189 1.47168 11.4482 1.25244 12.0001 1.25244C12.2733 1.25244 12.5439 1.30626 12.7964 1.41084C13.0488 1.51541 13.2782 1.66869 13.4715 1.86192C13.6647 2.05514 13.818 2.28454 13.9225 2.537C14.0271 2.78947 14.0809 3.06006 14.0809 3.33332C14.0809 3.60659 14.0271 3.87718 13.9225 4.12964C13.818 4.3821 13.6647 4.6115 13.4715 4.80473L5.13813 13.1381C5.05269 13.2235 4.94563 13.2841 4.82841 13.3134L2.16175 13.9801C1.93456 14.0369 1.69424 13.9703 1.52865 13.8047C1.36306 13.6391 1.2965 13.3988 1.35329 13.1716L2.01996 10.505C2.04927 10.3877 2.10988 10.2807 2.19532 10.1953L10.5287 1.86192Z"
+                                      fill="#8A8A8A"/>
+                            </svg>
+
+                            <div class="custom-control custom-switch mr-3 text-12 ">
+                                <input type="checkbox" class="custom-control-input" checked="" id="customSwitch3">
+                                <label class="custom-control-label text-14 text-muted font-weight-lighter"
+                                       for="customSwitch3">Startdatum: 07.05.2022</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <svg class="tables-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M18.7071 15.7071C18.3166 16.0976 17.6834 16.0976 17.2929 15.7071L12 10.4142L6.70711 15.7071C6.31658 16.0976 5.68342 16.0976 5.29289 15.7071C4.90237 15.3166 4.90237 14.6834 5.29289 14.2929L11.2929 8.29289C11.6834 7.90237 12.3166 7.90237 12.7071 8.29289L18.7071 14.2929C19.0976 14.6834 19.0976 15.3166 18.7071 15.7071Z"
+                                  fill="#8A8A8A"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body not-hidden p-0 ">
+                <div class="table  projects text-14">
+                    <form action="#" class="my-3 text-14 w-100 w-md-50 w-lg-25 ">
+                        <div class="form-group text-14 ">
+                            <label for="">Name des Notariats</label>
+                            <select class="form-select form-control">
+                                <option selected>1234</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary text-14 text-md-16 font-weight-bolder">Aktivieren</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="card p-md-4 p-2">
+            <div class="d-flex justify-content-between align-items-center tables-header not-link">
+                <div class="d-flex align-items-center card-title not-link-box w-100">
+                    <svg class="d-none back-arrow mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M20 12C20 12.5523 19.5523 13 19 13L5 13C4.44771 13 4 12.5523 4 12C4 11.4477 4.44771 11 5 11L19 11C19.5523 11 20 11.4477 20 12Z"
+                              fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071L4.29289 12.7071C3.90237 12.3166 3.90237 11.6834 4.29289 11.2929L11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289C13.0976 4.68342 13.0976 5.31658 12.7071 5.70711L6.41421 12L12.7071 18.2929C13.0976 18.6834 13.0976 19.3166 12.7071 19.7071Z"
+                              fill="white"/>
+                    </svg>
+                    <div class="card-title-not-link  font-weight-bold text-14 text-md-20  d-flex justify-content-between align-items-center w-100">
+                        Öffentliche Angaben
+                    </div>
+                </div>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <svg class="tables-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M18.7071 15.7071C18.3166 16.0976 17.6834 16.0976 17.2929 15.7071L12 10.4142L6.70711 15.7071C6.31658 16.0976 5.68342 16.0976 5.29289 15.7071C4.90237 15.3166 4.90237 14.6834 5.29289 14.2929L11.2929 8.29289C11.6834 7.90237 12.3166 7.90237 12.7071 8.29289L18.7071 14.2929C19.0976 14.6834 19.0976 15.3166 18.7071 15.7071Z"
+                                  fill="#8A8A8A"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body not-hidden p-0 ">
+                <div class="table  projects text-14">
+                    <form action="#" class="my-3 w-md-50">
+                        <div class="form-group text-14">
+                            <label for="">Name des Notariats</label>
+                            <input type="text" class="form-control " value="Super Duper"
+                                   placeholder="Name des Notariats">
+                        </div>
+                        <div class="form-group text-14">
+                            <label for="">Adresse</label>
+                            <input type="text" class="form-control " value="3024 Joes Road, Albany, NY 12207"
+                                   placeholder="Adresse">
+                        </div>
+                        <div class="form-group text-14">
+                            <label for="">Website</label>
+                            <input type="text" class="form-control " value="https://websitecompany.com"
+                                   placeholder="Website">
+                        </div>
+                        <div class="form-group text-14">
+                            <label class="text-14" for="">E-Mail-Adresse</label>
+                            <input type="email" class="form-control " value="dennis416@gmail.com"
+                                   placeholder="Enter your e-mail addresse">
+                        </div>
+                        <div class="form-group text-14">
+                            <label for="">Telefonnummer</label>
+                            <input type="text" class="form-control " value="(256) 289-9707" placeholder="Telefonnummer">
+                        </div>
+                        <div class="form-group text-14">
+                            <label for="">Gesprochene Sprachen</label>
+                            <input type="text" class="form-control " value="Deutsch, Englisch, Französisch"
+                                   placeholder="Gesprochene Sprachen">
+                        </div>
+                        <div class="form-group text-14">
+                            <label for="">Profile URL</label>
+                            <input type="text" class="form-control " value="Profile URL" placeholder="Profile URL">
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="card p-md-4 p-2">
+            <div class="d-flex justify-content-between align-items-center tables-header not-link">
+                <div class="d-flex align-items-center card-title not-link-box w-100">
+
+                    <svg class="d-none back-arrow mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M20 12C20 12.5523 19.5523 13 19 13L5 13C4.44771 13 4 12.5523 4 12C4 11.4477 4.44771 11 5 11L19 11C19.5523 11 20 11.4477 20 12Z"
+                              fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071L4.29289 12.7071C3.90237 12.3166 3.90237 11.6834 4.29289 11.2929L11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289C13.0976 4.68342 13.0976 5.31658 12.7071 5.70711L6.41421 12L12.7071 18.2929C13.0976 18.6834 13.0976 19.3166 12.7071 19.7071Z"
+                              fill="white"/>
+                    </svg>
+                    <div class="card-title-not-link  font-weight-bold text-14 text-md-20  d-flex justify-content-between align-items-center w-100">
+                        <div class="d-flex align-items-center">
+                            <span class="mr-3"> Persönliche Angaben </span>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <svg class="tables-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M18.7071 15.7071C18.3166 16.0976 17.6834 16.0976 17.2929 15.7071L12 10.4142L6.70711 15.7071C6.31658 16.0976 5.68342 16.0976 5.29289 15.7071C4.90237 15.3166 4.90237 14.6834 5.29289 14.2929L11.2929 8.29289C11.6834 7.90237 12.3166 7.90237 12.7071 8.29289L18.7071 14.2929C19.0976 14.6834 19.0976 15.3166 18.7071 15.7071Z"
+                                  fill="#8A8A8A"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body not-hidden p-0 ">
+                <div class="table  projects text-14">
+                    <form action="#" class="my-3 text-14 w-100 w-md-50 w-lg-25 ">
+                        <div class="form-group text-14">
+                            <label for="">Ansprechpartner:In</label>
+                            <input type="text" class="form-control " value="Jerry Helfer"
+                                   placeholder="Ansprechpartner:In">
+                        </div>
+                        <div class="form-group text-14">
+                            <label class="text-14" for="">E-Mail-Adresse</label>
+                            <input type="email" class="form-control " value="dennis416@gmail.com"
+                                   placeholder="Enter your e-mail addresse">
+                        </div>
+                        <div class="form-group text-14">
+                            <label for="">Telefonnummer</label>
+                            <input type="text" class="form-control " value="(256) 289-9707" placeholder="Telefonnummer">
+                        </div>
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="card p-md-4 p-2">
+            <div class="d-flex justify-content-between align-items-center tables-header not-link">
+                <div class="d-flex align-items-center card-title not-link-box w-100">
+
+                    <svg class="d-none back-arrow mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M20 12C20 12.5523 19.5523 13 19 13L5 13C4.44771 13 4 12.5523 4 12C4 11.4477 4.44771 11 5 11L19 11C19.5523 11 20 11.4477 20 12Z"
+                              fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071L4.29289 12.7071C3.90237 12.3166 3.90237 11.6834 4.29289 11.2929L11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289C13.0976 4.68342 13.0976 5.31658 12.7071 5.70711L6.41421 12L12.7071 18.2929C13.0976 18.6834 13.0976 19.3166 12.7071 19.7071Z"
+                              fill="white"/>
+                    </svg>
+                    <div class="card-title-not-link  font-weight-bold text-14 text-md-20  d-flex justify-content-between align-items-center w-100">
+                        <div class="d-flex align-items-center">
+                            <span class="mr-3"> Account </span>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <svg class="tables-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M18.7071 15.7071C18.3166 16.0976 17.6834 16.0976 17.2929 15.7071L12 10.4142L6.70711 15.7071C6.31658 16.0976 5.68342 16.0976 5.29289 15.7071C4.90237 15.3166 4.90237 14.6834 5.29289 14.2929L11.2929 8.29289C11.6834 7.90237 12.3166 7.90237 12.7071 8.29289L18.7071 14.2929C19.0976 14.6834 19.0976 15.3166 18.7071 15.7071Z"
+                                  fill="#8A8A8A"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body not-hidden p-0 ">
+                <div class="table  projects text-14">
+                    <form action="#" class="my-3 text-14 w-100 w-md-50 w-lg-25 ">
+
+                        <div class="form-group text-14">
+                            <label class="text-14" for="">E-Mail-Adresse</label>
+                            <input type="email" class="form-control " value="dennis416@gmail.com"
+                                   placeholder="Enter your e-mail addresse">
+                        </div>
+                        <div class="form-group text-14">
+                            <label for="">Passwort</label>
+                            <input type="password" class="form-control " value="67jht64738" placeholder="passwort">
+                        </div>
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="card p-md-4 p-2">
+            <div class="d-flex justify-content-between align-items-center tables-header not-link">
+                <div class="d-flex align-items-center card-title not-link-box w-100">
+
+                    <svg class="d-none back-arrow mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M20 12C20 12.5523 19.5523 13 19 13L5 13C4.44771 13 4 12.5523 4 12C4 11.4477 4.44771 11 5 11L19 11C19.5523 11 20 11.4477 20 12Z"
+                              fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071L4.29289 12.7071C3.90237 12.3166 3.90237 11.6834 4.29289 11.2929L11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289C13.0976 4.68342 13.0976 5.31658 12.7071 5.70711L6.41421 12L12.7071 18.2929C13.0976 18.6834 13.0976 19.3166 12.7071 19.7071Z"
+                              fill="white"/>
+                    </svg>
+                    <div class="card-title-not-link  font-weight-bold text-14 text-md-20  d-flex justify-content-between align-items-center w-100">
+                        <div class="d-flex align-items-center">
+                            <span class="mr-3"> Mitgliedschaft </span>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <svg class="tables-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M18.7071 15.7071C18.3166 16.0976 17.6834 16.0976 17.2929 15.7071L12 10.4142L6.70711 15.7071C6.31658 16.0976 5.68342 16.0976 5.29289 15.7071C4.90237 15.3166 4.90237 14.6834 5.29289 14.2929L11.2929 8.29289C11.6834 7.90237 12.3166 7.90237 12.7071 8.29289L18.7071 14.2929C19.0976 14.6834 19.0976 15.3166 18.7071 15.7071Z"
+                                  fill="#8A8A8A"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body not-hidden p-0 ">
+                <div class="table  projects text-14">
+                    <form action="#" class="my-3 text-14 w-100 w-lg-50  w-md-75 ">
+                        <p class="text-md-16 text-14 font-weight-bold">Rechnungsadresse:</p>
+                        <div class="form-group text-14">
+                            <label class="text-14" for="">Name</label>
+                            <input type="text" class="form-control " value="Tam's Stationers"
+                                   placeholder="Name">
+                        </div>
+                        <div class="form-group text-14">
+                            <label class="text-14" for="">Straße</label>
+                            <input type="text" class="form-control " value="Berlin"
+                                   placeholder="Straße">
+                        </div>
+                        <div class="form-group text-14">
+                            <label class="text-14" for="">Hausnummer</label>
+                            <input type="text" class="form-control " value="Joes Road"
+                                   placeholder="Hausnummer">
+                        </div>
+                        <div class="form-group text-14">
+                            <label class="text-14" for="">Postleitzahl</label>
+                            <input type="text" class="form-control " value="34"
+                                   placeholder="Postleitzahl">
+                        </div>
+                        <div class="form-group text-14">
+                            <label class="text-14" for="">Ort</label>
+                            <input type="text" class="form-control " value="6473948"
+                                   placeholder="Ort">
+                        </div>
+                        <div class="form-group text-14">
+                            <label class="text-14" for="">Rechnungen an folgende E-Mail-Adresse senden</label>
+                            <input type="text" class="form-control " value="r.m.smith@gmail.com"
+                                   placeholder="Rechnungen an folgende E-Mail-Adresse senden">
+                        </div>
+                        <div class="form-group text-14">
+                            <label class="text-14" for="">Kundennummer</label>
+                            <input type="text" class="form-control " value="3728907320"
+                                   placeholder="Kundennummer">
+                        </div>
+                        <div class="form-group bg-light rounded-lg p-2">
+                            <p class="text-md-16 text-14 font-weight-bold mb-0">Aktuelle Mitgliedschaft</p>
+                            <p class="text-12 text-muted font-weight-bolder">Mitgliedschaft endet am: 08.05.2022</p>
+                            <p class="text-md-20 text-16  font-weight-bold">107,00€</p>
+                            <p class="text-12 text-muted font-weight-bolder mb-0">1x Notar:In - 49,00€ </p>
+                            <p class="text-12 text-muted font-weight-bolder">1x zusätzliche(r) Notar:In - 29,00€</p>
+                        </div>
+
+                        <p class="text-md-16 text-14 font-weight-bold mt-3">Aktive Notare</p>
+                        <div class=" form-group  border border-light shadow-sm rounded-lg p-2 d-flex align-items-center col-12 my-3">
+                            <img class="group-user-photo rounded-circle   mr-3 " src="images/user.png"  alt="">
+                            <div class="d-flex flex-column ">
+                                <p class="text-md-16 text-14 font-weight-bold mb-0">Jerry Helfer</p>
+                                <p class="text-14 text-muted font-weight-bolder mb-0">Notar:In</p>
+                            </div>
+                        </div>
+                        <div class=" form-group  border border-light shadow-sm rounded-lg p-2 d-flex align-items-center col-12 my-3">
+                            <img class="group-user-photo rounded-circle   mr-3 " src="images/user.png"  alt="">
+                            <div class="d-flex flex-column ">
+                                <p class="text-md-16 text-14 font-weight-bold mb-0">Jerry Helfer</p>
+                                <p class="text-14 text-muted font-weight-bolder mb-0">Notar:In</p>
+                            </div>
+                        </div>
+                        <div class=" form-group  border border-light shadow-sm rounded-lg p-2 d-flex align-items-center col-12 my-3">
+                            <img class="group-user-photo rounded-circle   mr-3 " src="images/user.png"  alt="">
+                            <div class="d-flex flex-column ">
+                                <p class="text-md-16 text-14 font-weight-bold mb-0">Jerry Helfer</p>
+                                <p class="text-14 text-muted font-weight-bolder mb-0">Notar:In</p>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="text-md-18 text-14 font-weight-bold mt-5 mb-md-0">Rechnungsverlauf</p>
+                    <div class="w-100">
+                        <div class="md-hidden grid-5-column text-14 text-muted font-weight-bolder border-b  py-3">
+                            <p class="mb-0">Datum</p>
+                            <p class="mb-0 ">Rechnung Nr.</p>
+                            <p class="mb-0 text-center">Rechnungsbetrag</p>
+                            <p class="mb-0 text-center">Summe</p>
+                            <p class="mb-0"></p>
+                        </div>
+
+                        <div class="d-grid grid-5-column text-sm-14 text-12  font-weight-bold border-b  py-3">
+                            <p class="mb-0">22. Juni 2022</p>
+                            <p class="mb-0 text-md-center d-flex  align-items-center"><span class="d-block d-md-none mr-2 text-muted">Rechnung Nr.</span>  <span>654437654</span></p>
+                            <p class="mb-0 text-md-center">1 Month</p>
+                            <p class="mb-0 text-md-center">45€</p>
+                            <p class="mb-0 d-flex justify-content-md-end justify-content-center">
+                                <button class="btn btn-primary d-flex justify-content-center align-items-center text-nowrap w-100 font-weight-bolder  ">
+                                    <svg class="mr-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 1.3335C8.36811 1.3335 8.66659 1.63197 8.66659 2.00016V10.0002C8.66659 10.3684 8.36811 10.6668 7.99992 10.6668C7.63173 10.6668 7.33325 10.3684 7.33325 10.0002V2.00016C7.33325 1.63197 7.63173 1.3335 7.99992 1.3335Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.86201 6.86177C5.12236 6.60142 5.54447 6.60142 5.80482 6.86177L8.00008 9.05703L10.1953 6.86177C10.4557 6.60142 10.8778 6.60142 11.1382 6.86177C11.3985 7.12212 11.3985 7.54423 11.1382 7.80458L8.47149 10.4712C8.21114 10.7316 7.78903 10.7316 7.52868 10.4712L4.86201 7.80458C4.60166 7.54423 4.60166 7.12212 4.86201 6.86177Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25253 3.25229C1.62761 2.87722 2.13632 2.6665 2.66675 2.6665H5.33341C5.7016 2.6665 6.00008 2.96498 6.00008 3.33317C6.00008 3.70136 5.7016 3.99984 5.33341 3.99984H2.66675C2.48994 3.99984 2.32037 4.07008 2.19534 4.1951C2.07032 4.32012 2.00008 4.48969 2.00008 4.6665V11.3332C2.00008 11.51 2.07032 11.6796 2.19534 11.8046C2.32037 11.9296 2.48994 11.9998 2.66675 11.9998H13.3334C13.5102 11.9998 13.6798 11.9296 13.8048 11.8046C13.9298 11.6795 14.0001 11.51 14.0001 11.3332V4.6665C14.0001 4.48969 13.9298 4.32012 13.8048 4.1951C13.6798 4.07007 13.5102 3.99984 13.3334 3.99984H10.6667C10.2986 3.99984 10.0001 3.70136 10.0001 3.33317C10.0001 2.96498 10.2986 2.6665 10.6667 2.6665H13.3334C13.8638 2.6665 14.3726 2.87722 14.7476 3.25229C15.1227 3.62736 15.3334 4.13607 15.3334 4.6665V11.3332C15.3334 11.8636 15.1227 12.3723 14.7476 12.7474C14.3726 13.1225 13.8638 13.3332 13.3334 13.3332H2.66675C2.13631 13.3332 1.62761 13.1225 1.25253 12.7474C0.877462 12.3723 0.666748 11.8636 0.666748 11.3332V4.6665C0.666748 4.13607 0.877462 3.62736 1.25253 3.25229Z" fill="white"/>
+                                    </svg>
+
+                                    Herunterladen
+                                </button>
+                            </p>
+                        </div>
+                        <div class="d-grid grid-5-column text-sm-14 text-12  font-weight-bold border-b  py-3">
+                            <p class="mb-0">22. Juni 2022</p>
+                            <p class="mb-0 text-md-center d-flex  align-items-center"><span class="d-block d-md-none mr-2 text-muted">Rechnung Nr.</span>  <span>654437654</span></p>
+                            <p class="mb-0 text-md-center">1 Month</p>
+                            <p class="mb-0 text-md-center">45€</p>
+                            <p class="mb-0 d-flex justify-content-md-end justify-content-center">
+                                <button class="btn btn-primary d-flex justify-content-center align-items-center text-nowrap w-100 font-weight-bolder  ">
+                                    <svg class="mr-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 1.3335C8.36811 1.3335 8.66659 1.63197 8.66659 2.00016V10.0002C8.66659 10.3684 8.36811 10.6668 7.99992 10.6668C7.63173 10.6668 7.33325 10.3684 7.33325 10.0002V2.00016C7.33325 1.63197 7.63173 1.3335 7.99992 1.3335Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.86201 6.86177C5.12236 6.60142 5.54447 6.60142 5.80482 6.86177L8.00008 9.05703L10.1953 6.86177C10.4557 6.60142 10.8778 6.60142 11.1382 6.86177C11.3985 7.12212 11.3985 7.54423 11.1382 7.80458L8.47149 10.4712C8.21114 10.7316 7.78903 10.7316 7.52868 10.4712L4.86201 7.80458C4.60166 7.54423 4.60166 7.12212 4.86201 6.86177Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25253 3.25229C1.62761 2.87722 2.13632 2.6665 2.66675 2.6665H5.33341C5.7016 2.6665 6.00008 2.96498 6.00008 3.33317C6.00008 3.70136 5.7016 3.99984 5.33341 3.99984H2.66675C2.48994 3.99984 2.32037 4.07008 2.19534 4.1951C2.07032 4.32012 2.00008 4.48969 2.00008 4.6665V11.3332C2.00008 11.51 2.07032 11.6796 2.19534 11.8046C2.32037 11.9296 2.48994 11.9998 2.66675 11.9998H13.3334C13.5102 11.9998 13.6798 11.9296 13.8048 11.8046C13.9298 11.6795 14.0001 11.51 14.0001 11.3332V4.6665C14.0001 4.48969 13.9298 4.32012 13.8048 4.1951C13.6798 4.07007 13.5102 3.99984 13.3334 3.99984H10.6667C10.2986 3.99984 10.0001 3.70136 10.0001 3.33317C10.0001 2.96498 10.2986 2.6665 10.6667 2.6665H13.3334C13.8638 2.6665 14.3726 2.87722 14.7476 3.25229C15.1227 3.62736 15.3334 4.13607 15.3334 4.6665V11.3332C15.3334 11.8636 15.1227 12.3723 14.7476 12.7474C14.3726 13.1225 13.8638 13.3332 13.3334 13.3332H2.66675C2.13631 13.3332 1.62761 13.1225 1.25253 12.7474C0.877462 12.3723 0.666748 11.8636 0.666748 11.3332V4.6665C0.666748 4.13607 0.877462 3.62736 1.25253 3.25229Z" fill="white"/>
+                                    </svg>
+
+                                    Herunterladen
+                                </button>
+                            </p>
+                        </div>
+                        <div class="d-grid grid-5-column text-sm-14 text-12  font-weight-bold border-b  py-3">
+                            <p class="mb-0">22. Juni 2022</p>
+                            <p class="mb-0 text-md-center d-flex  align-items-center"><span class="d-block d-md-none mr-2 text-muted">Rechnung Nr.</span>  <span>654437654</span></p>
+                            <p class="mb-0 text-md-center">1 Month</p>
+                            <p class="mb-0 text-md-center">45€</p>
+                            <p class="mb-0 d-flex justify-content-md-end justify-content-center">
+                                <button class="btn btn-primary d-flex justify-content-center align-items-center text-nowrap w-100 font-weight-bolder  ">
+                                    <svg class="mr-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 1.3335C8.36811 1.3335 8.66659 1.63197 8.66659 2.00016V10.0002C8.66659 10.3684 8.36811 10.6668 7.99992 10.6668C7.63173 10.6668 7.33325 10.3684 7.33325 10.0002V2.00016C7.33325 1.63197 7.63173 1.3335 7.99992 1.3335Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.86201 6.86177C5.12236 6.60142 5.54447 6.60142 5.80482 6.86177L8.00008 9.05703L10.1953 6.86177C10.4557 6.60142 10.8778 6.60142 11.1382 6.86177C11.3985 7.12212 11.3985 7.54423 11.1382 7.80458L8.47149 10.4712C8.21114 10.7316 7.78903 10.7316 7.52868 10.4712L4.86201 7.80458C4.60166 7.54423 4.60166 7.12212 4.86201 6.86177Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25253 3.25229C1.62761 2.87722 2.13632 2.6665 2.66675 2.6665H5.33341C5.7016 2.6665 6.00008 2.96498 6.00008 3.33317C6.00008 3.70136 5.7016 3.99984 5.33341 3.99984H2.66675C2.48994 3.99984 2.32037 4.07008 2.19534 4.1951C2.07032 4.32012 2.00008 4.48969 2.00008 4.6665V11.3332C2.00008 11.51 2.07032 11.6796 2.19534 11.8046C2.32037 11.9296 2.48994 11.9998 2.66675 11.9998H13.3334C13.5102 11.9998 13.6798 11.9296 13.8048 11.8046C13.9298 11.6795 14.0001 11.51 14.0001 11.3332V4.6665C14.0001 4.48969 13.9298 4.32012 13.8048 4.1951C13.6798 4.07007 13.5102 3.99984 13.3334 3.99984H10.6667C10.2986 3.99984 10.0001 3.70136 10.0001 3.33317C10.0001 2.96498 10.2986 2.6665 10.6667 2.6665H13.3334C13.8638 2.6665 14.3726 2.87722 14.7476 3.25229C15.1227 3.62736 15.3334 4.13607 15.3334 4.6665V11.3332C15.3334 11.8636 15.1227 12.3723 14.7476 12.7474C14.3726 13.1225 13.8638 13.3332 13.3334 13.3332H2.66675C2.13631 13.3332 1.62761 13.1225 1.25253 12.7474C0.877462 12.3723 0.666748 11.8636 0.666748 11.3332V4.6665C0.666748 4.13607 0.877462 3.62736 1.25253 3.25229Z" fill="white"/>
+                                    </svg>
+
+                                    Herunterladen
+                                </button>
+                            </p>
+                        </div>
+                        <div class="d-grid grid-5-column text-sm-14 text-12  font-weight-bold border-b  py-3">
+                            <p class="mb-0">22. Juni 2022</p>
+                            <p class="mb-0 text-md-center d-flex  align-items-center"><span class="d-block d-md-none mr-2 text-muted">Rechnung Nr.</span>  <span>654437654</span></p>
+                            <p class="mb-0 text-md-center">1 Month</p>
+                            <p class="mb-0 text-md-center">45€</p>
+                            <p class="mb-0 d-flex justify-content-md-end justify-content-center">
+                                <button class="btn btn-primary d-flex justify-content-center align-items-center text-nowrap w-100 font-weight-bolder  ">
+                                    <svg class="mr-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 1.3335C8.36811 1.3335 8.66659 1.63197 8.66659 2.00016V10.0002C8.66659 10.3684 8.36811 10.6668 7.99992 10.6668C7.63173 10.6668 7.33325 10.3684 7.33325 10.0002V2.00016C7.33325 1.63197 7.63173 1.3335 7.99992 1.3335Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.86201 6.86177C5.12236 6.60142 5.54447 6.60142 5.80482 6.86177L8.00008 9.05703L10.1953 6.86177C10.4557 6.60142 10.8778 6.60142 11.1382 6.86177C11.3985 7.12212 11.3985 7.54423 11.1382 7.80458L8.47149 10.4712C8.21114 10.7316 7.78903 10.7316 7.52868 10.4712L4.86201 7.80458C4.60166 7.54423 4.60166 7.12212 4.86201 6.86177Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25253 3.25229C1.62761 2.87722 2.13632 2.6665 2.66675 2.6665H5.33341C5.7016 2.6665 6.00008 2.96498 6.00008 3.33317C6.00008 3.70136 5.7016 3.99984 5.33341 3.99984H2.66675C2.48994 3.99984 2.32037 4.07008 2.19534 4.1951C2.07032 4.32012 2.00008 4.48969 2.00008 4.6665V11.3332C2.00008 11.51 2.07032 11.6796 2.19534 11.8046C2.32037 11.9296 2.48994 11.9998 2.66675 11.9998H13.3334C13.5102 11.9998 13.6798 11.9296 13.8048 11.8046C13.9298 11.6795 14.0001 11.51 14.0001 11.3332V4.6665C14.0001 4.48969 13.9298 4.32012 13.8048 4.1951C13.6798 4.07007 13.5102 3.99984 13.3334 3.99984H10.6667C10.2986 3.99984 10.0001 3.70136 10.0001 3.33317C10.0001 2.96498 10.2986 2.6665 10.6667 2.6665H13.3334C13.8638 2.6665 14.3726 2.87722 14.7476 3.25229C15.1227 3.62736 15.3334 4.13607 15.3334 4.6665V11.3332C15.3334 11.8636 15.1227 12.3723 14.7476 12.7474C14.3726 13.1225 13.8638 13.3332 13.3334 13.3332H2.66675C2.13631 13.3332 1.62761 13.1225 1.25253 12.7474C0.877462 12.3723 0.666748 11.8636 0.666748 11.3332V4.6665C0.666748 4.13607 0.877462 3.62736 1.25253 3.25229Z" fill="white"/>
+                                    </svg>
+
+                                    Herunterladen
+                                </button>
+                            </p>
+                        </div>
+                        <div class="d-grid grid-5-column text-sm-14 text-12  font-weight-bold   py-3">
+                            <p class="mb-0">22. Juni 2022</p>
+                            <p class="mb-0 text-md-center d-flex  align-items-center"><span class="d-block d-md-none mr-2 text-muted">Rechnung Nr.</span>  <span>654437654</span></p>
+                            <p class="mb-0 text-md-center">1 Month</p>
+                            <p class="mb-0 text-md-center">45€</p>
+                            <p class="mb-0 d-flex justify-content-md-end justify-content-center">
+                                <button class="btn btn-primary d-flex justify-content-center align-items-center text-nowrap w-100 font-weight-bolder  ">
+                                    <svg class="mr-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 1.3335C8.36811 1.3335 8.66659 1.63197 8.66659 2.00016V10.0002C8.66659 10.3684 8.36811 10.6668 7.99992 10.6668C7.63173 10.6668 7.33325 10.3684 7.33325 10.0002V2.00016C7.33325 1.63197 7.63173 1.3335 7.99992 1.3335Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.86201 6.86177C5.12236 6.60142 5.54447 6.60142 5.80482 6.86177L8.00008 9.05703L10.1953 6.86177C10.4557 6.60142 10.8778 6.60142 11.1382 6.86177C11.3985 7.12212 11.3985 7.54423 11.1382 7.80458L8.47149 10.4712C8.21114 10.7316 7.78903 10.7316 7.52868 10.4712L4.86201 7.80458C4.60166 7.54423 4.60166 7.12212 4.86201 6.86177Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25253 3.25229C1.62761 2.87722 2.13632 2.6665 2.66675 2.6665H5.33341C5.7016 2.6665 6.00008 2.96498 6.00008 3.33317C6.00008 3.70136 5.7016 3.99984 5.33341 3.99984H2.66675C2.48994 3.99984 2.32037 4.07008 2.19534 4.1951C2.07032 4.32012 2.00008 4.48969 2.00008 4.6665V11.3332C2.00008 11.51 2.07032 11.6796 2.19534 11.8046C2.32037 11.9296 2.48994 11.9998 2.66675 11.9998H13.3334C13.5102 11.9998 13.6798 11.9296 13.8048 11.8046C13.9298 11.6795 14.0001 11.51 14.0001 11.3332V4.6665C14.0001 4.48969 13.9298 4.32012 13.8048 4.1951C13.6798 4.07007 13.5102 3.99984 13.3334 3.99984H10.6667C10.2986 3.99984 10.0001 3.70136 10.0001 3.33317C10.0001 2.96498 10.2986 2.6665 10.6667 2.6665H13.3334C13.8638 2.6665 14.3726 2.87722 14.7476 3.25229C15.1227 3.62736 15.3334 4.13607 15.3334 4.6665V11.3332C15.3334 11.8636 15.1227 12.3723 14.7476 12.7474C14.3726 13.1225 13.8638 13.3332 13.3334 13.3332H2.66675C2.13631 13.3332 1.62761 13.1225 1.25253 12.7474C0.877462 12.3723 0.666748 11.8636 0.666748 11.3332V4.6665C0.666748 4.13607 0.877462 3.62736 1.25253 3.25229Z" fill="white"/>
+                                    </svg>
+
+                                    Herunterladen
+                                </button>
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <p class="text-danger text-18 font-weight-bold py-4 d-flex align-items-center">
+            <span class="mr-2">Account löschen</span>
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33331 4.49967C1.33331 4.13148 1.63179 3.83301 1.99998 3.83301H14C14.3682 3.83301 14.6666 4.13148 14.6666 4.49967C14.6666 4.86786 14.3682 5.16634 14 5.16634H1.99998C1.63179 5.16634 1.33331 4.86786 1.33331 4.49967Z" fill="#CC3E3E"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66669 2.50033C6.48988 2.50033 6.32031 2.57056 6.19528 2.69559C6.07026 2.82061 6.00002 2.99018 6.00002 3.16699V3.83366H10V3.16699C10 2.99018 9.92978 2.82061 9.80476 2.69559C9.67973 2.57056 9.51016 2.50033 9.33335 2.50033H6.66669ZM11.3334 3.83366V3.16699C11.3334 2.63656 11.1226 2.12785 10.7476 1.75278C10.3725 1.37771 9.86379 1.16699 9.33335 1.16699H6.66669C6.13625 1.16699 5.62755 1.37771 5.25247 1.75278C4.8774 2.12785 4.66669 2.63656 4.66669 3.16699V3.83366H3.33335C2.96516 3.83366 2.66669 4.13214 2.66669 4.50033V13.8337C2.66669 14.3641 2.8774 14.8728 3.25247 15.2479C3.62755 15.6229 4.13625 15.8337 4.66669 15.8337H11.3334C11.8638 15.8337 12.3725 15.6229 12.7476 15.2479C13.1226 14.8728 13.3334 14.3641 13.3334 13.8337V4.50033C13.3334 4.13214 13.0349 3.83366 12.6667 3.83366H11.3334ZM4.00002 5.16699V13.8337C4.00002 14.0105 4.07026 14.18 4.19528 14.3051C4.32031 14.4301 4.48988 14.5003 4.66669 14.5003H11.3334C11.5102 14.5003 11.6797 14.4301 11.8048 14.3051C11.9298 14.18 12 14.0105 12 13.8337V5.16699H4.00002Z" fill="#CC3E3E"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66667 7.16699C7.03486 7.16699 7.33333 7.46547 7.33333 7.83366V11.8337C7.33333 12.2018 7.03486 12.5003 6.66667 12.5003C6.29848 12.5003 6 12.2018 6 11.8337V7.83366C6 7.46547 6.29848 7.16699 6.66667 7.16699Z" fill="#CC3E3E"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33335 7.16699C9.70154 7.16699 10 7.46547 10 7.83366V11.8337C10 12.2018 9.70154 12.5003 9.33335 12.5003C8.96516 12.5003 8.66669 12.2018 8.66669 11.8337V7.83366C8.66669 7.46547 8.96516 7.16699 9.33335 7.16699Z" fill="#CC3E3E"/>
+            </svg>
+
+        </p>
+    </section>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="NeuesNotariat" tabindex="-1" role="dialog" aria-labelledby="NeuesNotariatCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-darkBlue">
+                <h5 class="modal-title text-white" id="exampleModalLongTitle">Neues Notariat</h5>
+                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="#">
+                <div class="modal-body scroll">
+                    <h5 class="text-lg font-weight-bold my-3">Öffentliche Angaben</h5>
+
+                    <div class="form-group text-14">
+                        <label for="">Name des Notariats</label>
+                        <input type="text" class="form-control " value="Super Duper"
+                               placeholder="Name des Notariats">
+                    </div>
+                    <div class="form-group text-14">
+                        <label for="">Adresse</label>
+                        <input type="text" class="form-control " value="3024 Joes Road, Albany, NY 12207"
+                               placeholder="Adresse">
+                    </div>
+                    <div class="form-group text-14">
+                        <label for="">Website</label>
+                        <input type="text" class="form-control " value="https://websitecompany.com"
+                               placeholder="Website">
+                    </div>
+                    <div class="form-group text-14">
+                        <label class="text-14" for="">E-Mail-Adresse</label>
+                        <input type="email" class="form-control " value="dennis416@gmail.com"
+                               placeholder="Enter your e-mail addresse">
+                    </div>
+                    <div class="form-group text-14">
+                        <label for="">Telefonnummer</label>
+                        <input type="text" class="form-control " value="(256) 289-9707"
+                               placeholder="Telefonnummer">
+                    </div>
+                    <div class="form-group text-14">
+                        <label for="">Gesprochene Sprachen</label>
+                        <input type="text" class="form-control " value="Deutsch, Englisch, Französisch"
+                               placeholder="Gesprochene Sprachen">
+                    </div>
+                    <div class="form-group text-14">
+                        <label for="">Profile URL</label>
+                        <input type="text" class="form-control " value="Profile URL"
+                               placeholder="Profile URL">
+                    </div>
+                    <div class="dropdown-divider my-3"></div>
+                    <h5 class="text-lg font-weight-bold my-3">Persönliche Angaben</h5>
+                    <div class="form-group text-14">
+                        <label for="">Ansprechpartner:In</label>
+                        <input type="text" class="form-control " value="Jerry Helfer"
+                               placeholder="Ansprechpartner:In">
+                    </div>
+                    <div class="form-group text-14">
+                        <label class="text-14" for="">E-Mail-Adresse</label>
+                        <input type="email" class="form-control " value="dennis416@gmail.com"
+                               placeholder="Enter your e-mail addresse">
+                    </div>
+                    <div class="form-group text-14">
+                        <label for="">Telefonnummer</label>
+                        <input type="text" class="form-control " value="(256) 289-9707"
+                               placeholder="Telefonnummer">
+                    </div>
+                    <div class="dropdown-divider my-3"></div>
+                    <div class="d-flex align-items-center">
+                        <p class="mb-0 text-14 font-weight-bold">Suchmaschinen erlauben das Profil zu crawlen?</p>
+                        <div class="custom-control custom-switch ml-3 ">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit"
+                            class="btn btn-primary font-weight-bold text-lg mt-4 w-100">
+                        Notariat anlegen
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="admin-footer d-flex d-md-none justify-content-around align-items-center shadow-lg bg-white py-2 z-9999">
+    <a href="#">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.66797 2.49935C1.66797 2.03911 2.04106 1.66602 2.5013 1.66602H17.5013C17.9615 1.66602 18.3346 2.03911 18.3346 2.49935V8.33268C18.3346 8.79292 17.9615 9.16602 17.5013 9.16602H2.5013C2.04106 9.16602 1.66797 8.79292 1.66797 8.33268V2.49935ZM3.33464 3.33268V7.49935H16.668V3.33268H3.33464Z"
+                  fill="#0B1D41"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.5 11.6673C12.5 11.2071 12.8731 10.834 13.3333 10.834H17.5C17.9602 10.834 18.3333 11.2071 18.3333 11.6673V17.5007C18.3333 17.9609 17.9602 18.334 17.5 18.334H13.3333C12.8731 18.334 12.5 17.9609 12.5 17.5007V11.6673ZM14.1667 12.5007V16.6673H16.6667V12.5007H14.1667Z"
+                  fill="#0B1D41"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.66797 11.6673C1.66797 11.2071 2.04106 10.834 2.5013 10.834H10.0013C10.4615 10.834 10.8346 11.2071 10.8346 11.6673V17.5007C10.8346 17.9609 10.4615 18.334 10.0013 18.334H2.5013C2.04106 18.334 1.66797 17.9609 1.66797 17.5007V11.6673ZM3.33464 12.5007V16.6673H9.16797V12.5007H3.33464Z"
+                  fill="#0B1D41"/>
+        </svg>
+    </a>
+    <a href="#">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.56426 2.39825C7.03311 1.92941 7.66899 1.66602 8.33203 1.66602H11.6654C12.3284 1.66602 12.9643 1.92941 13.4331 2.39825C13.902 2.86709 14.1654 3.50297 14.1654 4.16602V17.4993C14.1654 17.9596 13.7923 18.3327 13.332 18.3327C12.8718 18.3327 12.4987 17.9596 12.4987 17.4993V4.16602C12.4987 3.945 12.4109 3.73304 12.2546 3.57676C12.0983 3.42048 11.8864 3.33268 11.6654 3.33268H8.33203C8.11102 3.33268 7.89906 3.42048 7.74278 3.57676C7.5865 3.73304 7.4987 3.945 7.4987 4.16602V17.4993C7.4987 17.9596 7.1256 18.3327 6.66536 18.3327C6.20513 18.3327 5.83203 17.9596 5.83203 17.4993V4.16602C5.83203 3.50297 6.09542 2.86709 6.56426 2.39825Z"
+                  fill="#0B1D41"/>
+            <rect x="0.832031" y="5" width="18.3333" height="13.3333" rx="3" fill="#074EDE"/>
+            <rect x="5.83203" y="6.66602" width="1.66667" height="10" fill="white"/>
+            <rect x="12.5" y="6.66602" width="1.66667" height="10" fill="white"/>
+            <path d="M6.66797 5V4.5C6.66797 3.39543 7.5634 2.5 8.66797 2.5H11.3346C12.4392 2.5 13.3346 3.39543 13.3346 4.5V5"
+                  stroke="#0B1D41" stroke-width="2"/>
+        </svg>
+    </a>
+    <a href="#">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.72039 12.8864C4.50179 12.105 5.5616 11.666 6.66667 11.666H13.3333C14.4384 11.666 15.4982 12.105 16.2796 12.8864C17.061 13.6678 17.5 14.7276 17.5 15.8327V17.4993C17.5 17.9596 17.1269 18.3327 16.6667 18.3327C16.2064 18.3327 15.8333 17.9596 15.8333 17.4993V15.8327C15.8333 15.1696 15.5699 14.5338 15.1011 14.0649C14.6323 13.5961 13.9964 13.3327 13.3333 13.3327H6.66667C6.00363 13.3327 5.36774 13.5961 4.8989 14.0649C4.43006 14.5338 4.16667 15.1696 4.16667 15.8327V17.4993C4.16667 17.9596 3.79357 18.3327 3.33333 18.3327C2.8731 18.3327 2.5 17.9596 2.5 17.4993V15.8327C2.5 14.7276 2.93899 13.6678 3.72039 12.8864Z"
+                  fill="#0B1D41"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.9987 3.33268C8.61799 3.33268 7.4987 4.45197 7.4987 5.83268C7.4987 7.21339 8.61799 8.33268 9.9987 8.33268C11.3794 8.33268 12.4987 7.21339 12.4987 5.83268C12.4987 4.45197 11.3794 3.33268 9.9987 3.33268ZM5.83203 5.83268C5.83203 3.5315 7.69751 1.66602 9.9987 1.66602C12.2999 1.66602 14.1654 3.5315 14.1654 5.83268C14.1654 8.13387 12.2999 9.99935 9.9987 9.99935C7.69751 9.99935 5.83203 8.13387 5.83203 5.83268Z"
+                  fill="#0B1D41"/>
+        </svg>
+    </a>
+
+</footer>
+
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
+</div>
+
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/adminlte.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+
+
